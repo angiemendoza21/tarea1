@@ -1,0 +1,182 @@
+Funcion videoej1
+	//entrada edadusuario como entero
+	//	leer edadusuario
+	//Escribir edadusuario " años"
+	Definir edadusuario Como Entero
+	escribir "¿Que edad tienes?"
+	leer edadusuario
+	Escribir edadusuario " años"
+FinFuncion
+
+
+funcion videoej2
+	//Primero, se definen tres variables num1, num2 y resultado como enteros.
+	//Luego, se le pide al usuario que ingrese el primer número con el comando Escribir, y se guarda la entrada del usuario en la variable num1 con el comando Leer.
+	//Se repite el proceso para el segundo número, guardando la entrada del usuario en la variable num2.
+	//Después, se realiza la suma de num1 y num2 y se guarda el resultado en la variable resultado.
+	//Finalmente, se imprime el resultado con el comando Escribir. Esto mostrará la suma de los dos números ingresados por el usuario.
+	definir num1, num2, resultado Como entero
+	escribir "ingresa el numero 1"
+	leer num1
+	Escribir "ingresa el num 2"
+	leer num2
+	resultado<-num1+num2
+	Escribir "el resultado es: " resultado
+FinFuncion
+
+
+
+Funcion videoej3
+	//Primero, se define una variable edad como entero.
+	//Luego, se asigna el valor 19 a la variable edad.
+	//Después, se utiliza una estructura de control Si para verificar si edad es mayor o igual a 18.
+	//Si edad es mayor o igual a 18, entonces se imprime "Es mayor de edad".
+	//Si edad es menor que 18 (es decir, en cualquier otro caso), entonces se imprime "Eres menor de edad".
+	Definir edad Como Entero
+	edad = 19
+	si edad>=18 Entonces
+		Escribir "Es mayor de edad"
+	SiNo
+		Escribir "Eres menor de edad"
+	FinSi
+FinFuncion
+
+
+Funcion videoej4
+	//Primero, se definen dos variables sed y dinero como cadenas.
+	//Luego, se le pide al usuario que indique si tiene sed y si tiene dinero, y se guardan las respuestas en las variables correspondientes.
+	//Después, se utiliza una estructura de control Si para verificar las respuestas del usuario.
+	//Si el usuario tiene sed o tiene dinero, entonces se le sugiere que compre una botella de agua.
+	//Si el usuario no tiene sed pero tiene dinero, entonces se le sugiere que compre un chocolate.
+	//Si el usuario no tiene sed y no tiene dinero, entonces se le sugiere que vaya a casa.
+	sed<-"si"
+	dinero<-"no"
+	leer sed
+	leer dinero
+	si sed="si" o dinero="si" Entonces
+		escribir "compra una botella de agua"
+	SiNo
+		si sed= "no" y dinero="si" Entonces
+			Escribir "compra un chocolate"
+		SiNo
+			Escribir "no tienes dinero, ve para la casa..."
+		FinSi
+	FinSi
+FinFuncion
+
+
+funcion videoej5
+	//Primero, se definen tres variables numaletorio, intentos y numUsuario como enteros.
+	//Luego, se genera un número aleatorio entre 0 y 10 y se guarda en numaletorio.
+	//Se asigna el valor 3 a la variable intentos, que representa el número de intentos que tiene el usuario para adivinar el número.
+	//Después, se entra en un bucle Mientras que se ejecuta mientras el usuario todavía tenga intentos.
+	//Dentro del bucle, se le pide al usuario que ingrese un número y se guarda en numUsuario.
+	//Si el número ingresado por el usuario es igual al número aleatorio, entonces se imprime un mensaje de felicitación y se establece intentos en 0 para salir del bucle.
+	//Si el número ingresado por el usuario no es igual al número aleatorio, entonces se resta 1 a intentos y se imprime un mensaje indicando cuántos intentos le quedan al usuario.
+	//Finalmente, después del bucle, si intentos es igual a 0, entonces se imprime un mensaje indicando que el usuario ha perdido. Si no, se imprime un mensaje indicando que el usuario ha ganado.
+	Definir numaletorio, intentos Como Entero
+	numaletorio<-Aleatorio(0,10)
+	definir numUsuario Como Entero
+	intentos<-3
+	Mientras intentos>0 hacer 
+		Escribir "ingresa un numero de 0 a 10"
+		leer numUsuario 
+		si numaletorio= numUsuario Entonces
+			Escribir " guau eres genial, es correcto! el numero es: " numaletorio
+			intentos<-0
+		SiNo
+			intentos<-intentos-1
+			Escribir "perdedor, te quedan " ,intentos, " intentos!";
+		FinSi
+	FinMientras
+	si intentos=0 Entonces
+		Escribir "ya no te quedan intentos!, Perdiste!"
+	SiNo
+		escribir "ganaste!"
+	FinSi
+FinFuncion
+
+
+Funcion videoej6
+	//Primero, se muestra un menú al usuario con las opciones de combos disponibles.
+	//Luego, se le pide al usuario que elija un combo y se guarda su elección en la variable combo.
+	//Después, se utiliza una estructura de control Segun para determinar qué mensaje mostrar en función del combo elegido por el usuario.
+	//Si el usuario elige el combo 1, se imprime un mensaje indicando que el valor es de 5.000.
+	//Si el usuario elige el combo 2, se imprime un mensaje indicando que el valor es de 2.500.
+	//Si el usuario elige el combo 3, se imprime un mensaje indicando que el valor es de 1.000.
+	//Si el usuario no elige ninguna de las opciones disponibles, se imprime un mensaje indicando que no tienen lo que busca.
+	Escribir "que combo desea?"
+	Escribir "1:combo1"
+	Escribir "2:combo2"
+	Escribir "3:combo3"
+    Definir combo Como Entero
+	leer combo
+	Segun combo Hacer
+		1:
+			Escribir" El valor es de 5.000"
+		2: 
+			Escribir "El valor es de 2.500"
+		3: 
+			Escribir "El valor es de 1.000"
+		De Otro Modo:
+			Escribir "No tenemos lo que buscas"
+	FinSegun
+FinFuncion
+
+
+Funcion videoej7
+	//Primero, se definen dos variables num y respuesta.
+	//Luego, se entra en un bucle Repetir que se ejecuta hasta que el usuario responda "no".
+	//Dentro del bucle, se genera un número aleatorio entre 0 y 10 y se guarda en num.
+	//Se imprime el número aleatorio.
+	//Se le pregunta al usuario si desea otro número y se guarda su respuesta en respuesta.
+	//Si el usuario responde "no", se sale del bucle y termina el proceso.
+	Definir num Como Entero
+	Definir respuesta Como Caracter
+	Repetir
+		num<- Aleatorio(0,10)
+		Escribir "el numero aleatorio es " ,num
+		Escribir " Deseas otro numero?"
+		leer respuesta 
+	Hasta Que respuesta="no"
+FinFuncion
+
+
+Funcion videoej8
+	//Primero, se define un arreglo personas con tres elementos y una variable i como entero.
+	//Luego, se asignan los nombres "Ignacio", "Victor" y "Juanito" a los tres elementos del arreglo personas.
+	//Después, se entra en un bucle Para que se ejecuta desde 1 hasta 3.
+	//Dentro del bucle, se imprime el nombre correspondiente del arreglo personas.
+	//Este proceso se repite para cada elemento del arreglo, por lo que se imprimirán los tres nombres.
+	Definir personas, i Como Caracter
+	Dimension personas(3);
+	personas(1) <- "Ignacio";
+	personas(2)<- "Victor";
+	personas(3)<- "Juanito";
+	Para i<-1 Hasta 3 Con Paso 1 Hacer
+		Escribir "El nombre de mi arreglo es: ", personas(i)
+	FinPara	
+FinFuncion
+
+//ejercicio9
+//La función sumar toma dos parámetros, dato1 y dato2.
+//Dentro de la función, se realiza la suma de dato1 y dato2.
+//Luego, se imprime el resultado de la suma con el mensaje "El resultado es: ".
+funcion sumar(dato1,dato2)
+	Escribir "el resultado es : " dato1+dato2
+FinFuncion
+
+Algoritmo ejerciciosvideo
+	//videoej1()
+	//videoej2()
+	//videoej3()
+	//videoej4()
+	//videoej5()
+	//videoej6()
+	//videoej7()
+	//videoej8()
+	//Definir datoA,datoB Como Entero
+	//leer datoA
+	//Leer datoB
+	//sumar(datoA,datoB)
+FinAlgoritmo
