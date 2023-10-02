@@ -1,0 +1,131 @@
+Funcion ejercicio1
+	// orden de procedencia:  (), ^ *, / mod div, + -
+	// del mismo nivel se resuelve de izquierda a derecha
+	// ejererccio 1: Dado a=3 y b=7, encuentra el valor de:
+	// y = 2 * a + b - 3 mod 3
+	// y = 2 * 3 + 7 - 3  mod 3
+	// y = 6 + 7 - 3 mod 3
+	// y = 6 + 7  - 0
+	// y =  13
+	Definir a,b,resp Como Entero
+	a=3;b=7;resp=0
+	resp = 2 * a + b - 3 mod 3
+	Escribir "El resultado es :" resp
+FinFuncion
+Funcion ejercicio2
+	//Si a=10 y b=4, calcula el valor de z = a * b + 3 mod a + b.
+	//Z = a * b +3 mod a + b 
+	//Z = 10 * 4 + 3 mod 10 + 4 
+	// Z = 40 + 3 mod 10 + 4 
+	//Z = 40 + 3 + 4 
+	//Z = 47 
+	Definir a, b,z Como Entero
+	a = 10 
+	b = 4 
+	z = a *b +3 mod a+b
+	Escribir "el valor de z es: "  z
+FinFuncion
+Funcion ejercicio3
+	//Con a=6 y b=2, determina el valor de w = a - b + 2 * a mod b.
+	// w = a - b + 2 * a mod b
+	//w = 6 -2 + 2 * 2 mod  2 
+	//w = 6- 2 + 2 * 0  
+	//w = 6 - 2 
+	// w = 4 
+	definir a,b, w Como Entero
+	a=6
+	b=2
+	w = a - b + 2 * a mod b
+	Escribir  "El valor de w es :" w
+FinFuncion
+Funcion ejercicio4
+	//Para a=8 y b=5, encuentra el valor de v = 2 * b + a div 2 + 4 * b mod a.
+	// v= 2 * b + a div 2 + 4 * b mod a
+	// v= 2 * 5 + 8 / 2 + 4 * 5 mod 8
+    // v=  10 + 8 / 2 + 20 mod 8    
+	// v= 10 + 8 / 2 + 4
+	// v= 10 + 4 + 4
+	// v= 18
+	Definir a, b, v Como Entero
+	a=8
+	b=5
+	v=2 * b + a / 2 + 4 * b mod a
+	Escribir "El valor de v es: " v
+FinFuncion
+Funcion ejercicio5
+	//Si a=12 y b=9, calcula el valor de u = b - a + 3 * a mod b
+	//u = b - a + 3 * a mod b
+	//u = 9 - 12 + 3 * 12 mod 9
+	//u = 9 - 12 + 3 * 36 mod 9
+	//u = 9 - 12 + 0
+	//u= -3 
+	Definir a, b, u Como Entero
+	a=12
+	b=9
+	u = b - a + 3 * a mod b
+	Escribir "el valor de u es: " u
+FinFuncion
+Funcion ejercicio6
+	//(5 + 3 * 2) + 9 > 3 * 5 * 14 % 3
+	//(5 + 3 * 2) + 9 > 210 % 3
+	// 5 + 6 + 9 > 210 % 3
+	//20 > 0 
+	// La expresion es verdadera 20 es mayor que 0
+	Definir  ejercicio Como logico 
+	ejercicio = (5 + 3 * 2) + 9 > 3 * 5 * 14 % 3
+	Escribir ejercicio
+FinFuncion
+Funcion ejercicio7
+	//2 *(4 - 10 + 8)/2* 36 *(1/2)
+	//2 *(4 - 10 + 8)/2* 36 *(1/2)
+	//2 * 2 / 2 * 36 * (1/2)
+	//  4 / 2 * 36 * (1/2)
+	// 2 * 36 * (1/2)
+	// 72 * (1/2)
+	// 36
+	Definir  ejercicio Como entero
+	ejercicio = 2 *(4 - 10 + 8)/2* 36 *(1/2)
+	Escribir ejercicio
+FinFuncion
+Funcion ejercicio8
+	//260 / 12 + 54 % 3 - 85 % 7
+	//21.67 + 54 % 3 - 1
+	// 21.67 + 0 - 1
+	// 20.67
+	Definir ejercicio Como Real
+	ejercicio= 260 / 12 + 54 % 3 - 85 % 7
+	escribir ejercicio
+FinFuncion
+Funcion ejercicio9
+	//(48 < 2 * 3) || (2 * 7 < 12)
+	//48 < 2 * 3:
+	//48 < 6  "48 no es menor que 6. Por lo tanto esta parte es falsa"
+	//14 < 12   "14 no es menor que 12. Por lo tanto, esta parte también es falsa"
+	//falso || falso = Falso 
+	//El resultado de esta expresión será falso.
+	Definir ejercicio Como Logico
+	ejercicio= (48 < 2 * 3) | (2 * 7 < 12)
+	escribir ejercicio
+FinFuncion
+Funcion ejercicio10
+	//((8 > 2) | | (932 < 23) ) && 4 == 2
+	//8 > 2: Esto es verdadero ya que 8 es mayor que 2.
+    //932 < 23: Esto es falso ya que 932 no es menor que 23.
+	//4 ==2 : es falso 
+	//El resultado de esta expresión será falso, ya que la última condición no se cumple
+	Definir ejercicio Como logico
+	ejercicio= ((8 > 2) | (932 < 23) ) & 4 = 2
+	escribir ejercicio
+FinFuncion
+Algoritmo expresionesMatematicas
+	ejercicio1()
+	ejercicio2()
+	ejercicio3()
+	ejercicio4()
+	ejercicio5()
+	ejercicio6()
+	ejercicio7()
+	ejercicio8()
+	ejercicio9()
+	ejercicio10()
+FinAlgoritmo
