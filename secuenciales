@@ -33,6 +33,7 @@ Funcion ejercicio12
 FinFuncion
 Funcion ejercicio13
 	//Número par o impar: Solicita al usuario que ingrese un número e indica si es par o impar.
+	
 	Definir numero Como Entero
 	Escribir "Ingrese un número:"
 		Leer numero
