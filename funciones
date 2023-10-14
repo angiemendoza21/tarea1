@@ -1,0 +1,174 @@
+
+//FUNCIONES 
+//58. Función sin parámetros para saludar.
+//El cuerpo de la función es el bloque de código que se ejecuta cuando se llama a la función.
+//el cuerpo de la función contiene una sola instrucción, que es imprimir el mensaje "¡Hola! Bienvenido ".
+funcion Saludar()
+    Escribir("¡Hola! Bienvenido ")
+Finfuncion
+
+//59. Función con parámetros para sumar dos números.
+//Declarar una variable llamada respuesta de tipo real.
+//Asignar a la variable respuesta la suma de los dos parámetros.
+//Imprimir el valor de la variable respuesta.
+Funcion sumar(num1,num2)
+	Definir respuesta como real
+	respuesta = num1 + num2
+	Escribir respuesta
+FinFuncion
+
+
+//60. Función con return para multiplicar dos números.
+//Declarar una variable llamada respuesta de tipo real.
+//Asignar a la variable respuesta el producto de los dos parámetros.
+//Devolver el valor de la variable respuesta.
+Funcion resp=multiplicar(n1,n2) // parametros son variables q reciben valores
+	Definir resp Como Real
+	resp = n1*n2
+FinFuncion
+
+//61. Función sin return para determinar si un número es par o impar.
+//Una instrucción condicional que comprueba si el número es divisible por 2.
+//	Si el número es divisible por 2, la función imprime el mensaje "El número es par". 
+//	Si el número no es divisible por 2, la función imprime el mensaje "El número es impar".
+Funcion par_impar(num)
+	si num %2 = 0 Entonces
+		Escribir "El numero es par"
+	SiNo
+		Escribir "El numero es impar"
+	FinSi
+FinFuncion
+
+//62. Función con parámetros y return para calcular el área de un rectángulo.
+//Declarar una variable llamada respuesta de tipo real.
+//Asignar a la variable respuesta el producto de la base y la altura.
+//Imprimir el valor de la variable respuesta.
+Funcion resp=resc(base, altura)
+	Definir resp Como Real
+	resp = base * altura
+	Escribir "El area del Rectangulo es de: " resp
+FinFuncion
+
+//63. Función sin parámetros para imprimir tu nombre.
+//El cuerpo de la función es el bloque de código que se ejecuta cuando se llama a la función. 
+//En este caso, el cuerpo de la función contiene tres instrucciones:
+//	Declarar una variable llamada nombre de tipo caracter.
+//	Solicitar al usuario su nombre.
+//	Imprimir el nombre del usuario.
+funcion  ImprimirNombre
+	Definir nombre Como Caracter
+	Escribir "Ingresa tu nombre"
+	Leer nombre
+	Escribir "Mi nombre es:", nombre
+FinFuncion
+
+//64. Función con return para convertir grados Celsius a Fahrenheit.
+//Declarar una variable llamada fahrenheit de tipo real.
+//Calcular la temperatura en grados Fahrenheit.
+//Imprimir la temperatura en grados Fahrenheit.
+Funcion fahrenheit=convertir(celsius)
+	Definir fahrenheit Como Real
+	fahrenheit = 9/5 * celsius + 32
+	Escribir "La temperatura en grados Fahrenheit es: ", fahrenheit
+FinFuncion
+
+//65. Función con parámetros para contar un carácter en una frase.
+//Declarar una variable llamada long de tipo entero.
+//Obtener la longitud de la frase.
+//Imprimir el número de caracteres en la frase.
+Funcion ContarCaracteres(frase ) 
+	Definir long Como Entero
+	long = Longitud(frase)
+	Escribir "La palabra tiene: ",  long, " caracteres"
+FinFuncion
+
+//66. Función sin return para imprimir números del 1 al 10.
+
+//declaración de la función, la función no tiene parámetros y no devuelve ningún valor.  
+//Bucle for que imprime los números del 1 al 10.
+Funcion imprimir_numeros(num)
+	Para num <- 1 Hasta 10 
+        Escribir num
+	FinPara
+FinFuncion
+
+//67. Función con parámetros y return para sumar una lista de números.
+//Declarar tres variables: i, num y suma como real.
+//	Inicializar la variable suma =0.
+//	Un bucle for que lee un número del usuario y lo suma a la variable suma.
+Funcion suma=sumar_lista_numero(n)
+    Definir i, num, suma Como Real
+    suma = 0
+    Para i <- 1 Hasta n 
+        Escribir "Ingrese el número ", i, ": "
+        Leer num
+        suma = suma + num
+    FinPara
+FinFuncion
+
+
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Algoritmo funciones
+//58. Función sin parámetros para saludar.
+	saludar()
+
+//59. Función con parámetros para sumar dos números.
+	definir num1, num2 Como Entero
+	Escribir "ingrese un numero"
+	Leer num1
+	Escribir "ingrese otro numero" 
+	Leer num2
+	sumar(num1,num2)
+	
+	//60. Función con return para multiplicar dos números.
+	definir num1,num2,res como real
+	Escribir "ingrese num1:"; leer num1
+	Escribir "ingrese num2:"; leer num2
+	res = multiplicar(num1,num2)
+	Escribir res
+	
+	//61. Función sin return para determinar si un número es par o impar.
+	Definir num Como entero
+	Escribir "deme un numero"
+	Leer num
+	par_impar(num)
+	
+	//62. Función con parámetros y return para calcular el área de un rectángulo.
+	Definir base, altura,r Como Real
+	Escribir "Dame la base del rectangulo"
+	Leer base
+	Escribir "Dame la altura del rectangulo"
+	Leer altura
+	r = resc(base, altura)
+	
+	//63. Función sin parámetros para imprimir tu nombre.
+	ImprimirNombre()
+	
+	//64. Función con return para convertir grados Celsius a Fahrenheit.
+	Definir celsius,r Como Real
+    Escribir "Ingrese la temperatura en grados Celsius: "
+    Leer celsius
+	r = convertir(celsius)
+	
+	//65. Función con parámetros para contar un carácter en una frase.
+	Definir frase Como Cadena
+    Escribir "Ingresa una frase: "
+    Leer frase
+	ContarCaracteres(frase)
+	
+	//66. Función sin return para imprimir números del 1 al 10.
+	Definir num como real
+	num<-1
+	imprimir_numeros(num)
+	
+	//67. Función con parámetros y return para sumar una lista de números.
+	Definir n, r Como Real
+    Escribir "Ingrese la cantidad de números a sumar: "
+    Leer n
+    r = sumar_lista_numero(n)
+    Escribir "La suma de los números es: ", r
+
+FinAlgoritmo
+
+
+
